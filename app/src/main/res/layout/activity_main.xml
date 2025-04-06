@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrevistas"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el tipo de entrevista que desea realizar:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/technicalPractice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Práctica técnica"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas sobre código, diseño y arquitectura."
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ventas"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas de ventas y escenarios de rol."
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/productManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gerente de producto"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas sobre productos y estrategia."
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/softwareEngineer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingeniero de software"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas sobre codificación y sistemas."
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/productDesigner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diseñador de productos"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas sobre UX, UI y diseño."
+                android:textColor="@android:color/darker_gray" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de dificultad"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fácil"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difícil"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/startSimulationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar simulación"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/faqText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver preguntas frecuentes"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</ScrollView>
