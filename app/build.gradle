@@ -11,6 +11,11 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
+        // Set the Java version compatibility
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_18
+            targetCompatibility JavaVersion.VERSION_18
+        }
     }
 
     buildTypes {
@@ -22,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.0' // Updated to a compatible version
-    implementation 'com.google.android.material:material:1.5.0' // Updated to a compatible version
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3' // Updated to a compatible version
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 }
