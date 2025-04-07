@@ -11,13 +11,13 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
+        // Specify the namespace
+        namespace 'com.example.interviewapp'
         // Set the Java version compatibility
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_17
             targetCompatibility JavaVersion.VERSION_17
         }
-        // Specify the namespace
-        namespace 'com.example.interviewapp'
     }
 
     buildTypes {
