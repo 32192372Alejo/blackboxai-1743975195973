@@ -2,7 +2,6 @@ package com.example.interviewapp
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
